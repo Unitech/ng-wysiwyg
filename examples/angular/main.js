@@ -16,10 +16,10 @@ MoleskinExample.constant('version', '0.1');
 /**
  * @doc controller
  * @id MoleskinExample:MoleskinExample
- * @view 
- * @description 
+ * @view
+ * @description
  * @author Alexandre Strzelewicz <as@unitech.io>
  */
 MoleskinExample.controller('Moleskin', ['$scope', '$location', function($scope, $location) {
-  $scope.static_content = 'Hey';
+  $scope.content = 'Hey';
 }]);

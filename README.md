@@ -18,16 +18,13 @@ Usable with jQuery and Angular
 
 <script type="text/javascript" src="./dist/angular-moleskin.min.js"></script>
 <link rel="stylesheet" href="./moleskine.css" />
-    
-<moleskine bind-data="content2"
-   base-content="static_content"
-   class="hey"
+
+<moleskine bind-data="content"
    width="550"
-   css-class="mole"
+   height="450"
    default-mode="markdown"
    input="markdown"
-   output="html"
-   height="450"></moleskine>
+   output="html"></moleskine>
 ```
 
 Don't forget to inject module.
@@ -66,15 +63,13 @@ Example in example/jquery/index.html
 ### Angular
 
 ```javascript
-    scope    : { 
+    scope    : {
       bindData    : '=',
-      baseContent : '=',
       width       : '@',
       height      : '@',
       input       : '@',
       output      : '@',
       defaultMode : '@',
-      cssClass    : '@',
       autoGrow    : '@'
     },
 ```
@@ -90,7 +85,7 @@ Example in example/jquery/index.html
     this.defaultMode    = options.defaultMode || 'html';
     this.autoGrow       = options.autoGrow || true;
     this.mode           = 'html';
-``` 
+```
 
 ## Build
 
@@ -104,3 +99,4 @@ $ grunt compile
 
 # LICENSE
 
+MIT
