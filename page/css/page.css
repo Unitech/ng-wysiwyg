@@ -1,0 +1,146 @@
+
+body {
+    padding : 0;
+    margin:0;
+}
+
+header {
+    height : 150px;
+    background-color : #F4F1EA;
+}
+
+header .inner {
+    width : 940px;
+    margin : 0 auto;
+}
+
+header #brand {
+    font-size : 25px;
+    padding-top : 37px;
+    text-align : center;
+}
+header ul {
+    padding : 0;
+    list-style-type : none;
+    text-align : center;
+    width : 100%;
+}
+
+header ul li {
+    display:inline-block;
+    *display:inline; /*IE7*/
+    *zoom:1; /*IE7*/
+    margin-right:10px;
+}
+
+header ul li a:hover {
+    cursor : pointer;    
+}
+
+@-webkit-keyframes fontbulger {
+    0% {
+        top : -50px;
+    }
+    50% {
+        top : 0px;
+    }
+    100% {
+        top : -20px;
+    }
+}
+
+
+@-moz-keyframes fontbulger {
+    0% {
+        top : -50px;
+    }
+    50% {
+        top : 0px;
+    }
+    100% {
+        top : -20px;
+    }
+}
+
+
+@keyframes fontbulger {
+    0% {
+        top : -50px;
+    }
+    50% {
+        top : 0px;
+    }
+    100% {
+        top : -20px;
+    }
+}
+
+#forkme {
+    position : absolute;
+    right : 80px;
+    top : -50px;
+    width : 150px;
+
+}
+
+#forkme:hover {
+    cursor : pointer;
+    
+    -webkit-animation: fontbulger 0.4s ease-out;
+    -moz-animation: all 0.4s ease-out;
+    -o-animation: all 0.4s ease-out;
+    animation: fontbulger 0.4s ease-out;
+    
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -o-animation-fill-mode : forwards;
+    animation-fill-mode: forwards; 
+}
+
+
+#moleskin-part {
+    position : relative;
+    background: url(../img/moleskin.svg) no-repeat;
+    background-position:center top; 
+    background-size:980px;
+    min-height : 775px;
+    margin-top : 30px;
+}
+
+#moleskin-part #editor {
+    position : absolute;
+    left : 50%;
+    top : 58px;
+    margin-left: -440px;
+}
+
+#moleskin-part #preview {
+    position : absolute;
+    right : 50%;
+    margin-right: -440px;
+    top : 50px;
+    width : 420px;
+}
+
+section#doc {
+    background-color : #86c7ed;
+    padding-bottom : 50px;
+}
+
+section#doc .inner {
+    width : 980px;
+    margin : 0 auto;
+    color : white;
+}
+
+section#doc .inner h2 {
+    padding-top : 20px;
+    text-align : center;
+}
+
+xmp {
+    background-color : #eee;
+    padding : 20px;
+    color : black;
+    text-align : left;
+}
